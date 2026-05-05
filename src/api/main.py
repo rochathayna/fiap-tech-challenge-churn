@@ -1,12 +1,14 @@
 import logging
 import time
+
 import joblib
-import torch
 import pandas as pd
+import torch
 from fastapi import FastAPI, Request
+
 from src.api.schemas import CustomerFeatures, PredictionResponse
+from src.data.preprocessing import FEATURES_CAT, FEATURES_NUM
 from src.models.mlp import ChurnMLP
-from src.data.preprocessing import FEATURES_NUM, FEATURES_CAT
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -28,7 +30,10 @@ async def log_requests(request: Request, call_next):
     start = time.time()
     response = await call_next(request)
     duration = time.time() - start
-    logger.info(f"{request.method} {request.url.path} - {response.status_code} - {duration:.3f}s")
+    logger.info(
+    f"{request.method} {request.url.path} "
+    f"- {response.status_code} - {duration:.3f}s"
+)
     response.headers["X-Process-Time"] = str(duration)
     return response
 

@@ -1,6 +1,8 @@
-import torch
 import joblib
+import torch
+
 from src.models.mlp import ChurnMLP
+
 
 def test_modelo_carrega():
     model = ChurnMLP(input_dim=44)

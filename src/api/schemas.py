@@ -1,5 +1,6 @@
 from pydantic import BaseModel, Field
 
+
 class CustomerFeatures(BaseModel):
     tenure: int = Field(..., ge=0, le=100)
     MonthlyCharges: float = Field(..., ge=0)

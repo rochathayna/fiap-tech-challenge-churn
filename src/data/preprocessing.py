@@ -1,9 +1,8 @@
-import pandas as pd
-import numpy as np
-from sklearn.preprocessing import StandardScaler, OneHotEncoder
-from sklearn.compose import ColumnTransformer
-from sklearn.pipeline import Pipeline
 import logging
+
+import pandas as pd
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
 logger = logging.getLogger(__name__)
 
@@ -18,7 +17,9 @@ FEATURES_CAT = [
 def build_preprocessor() -> ColumnTransformer:
     return ColumnTransformer([
         ('num', StandardScaler(), FEATURES_NUM),
-        ('cat', OneHotEncoder(handle_unknown='ignore', sparse_output=False), FEATURES_CAT)
+        ('cat', OneHotEncoder(
+            handle_unknown='ignore', sparse_output=False
+        ), FEATURES_CAT)
     ])
 
 def load_and_clean(path: str) -> pd.DataFrame:
