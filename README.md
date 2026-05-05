@@ -96,6 +96,7 @@ pytest tests/ -v
 
 ## 📁 Estrutura do Projeto
 
+```text
 fiap-tech-challenge-churn/
 ├── src/
 │   ├── api/
@@ -121,9 +122,9 @@ fiap-tech-challenge-churn/
 ├── pyproject.toml
 ├── Makefile
 └── README.md
+```
 
 ---
-
 ## 🔌 API
 
 ### `GET /health`
