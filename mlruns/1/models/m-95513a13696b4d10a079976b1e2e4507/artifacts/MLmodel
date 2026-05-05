@@ -1,0 +1,23 @@
+artifact_path: file:C:/Users/thayn/fiap-tech-challenge-churn/mlruns/1/models/m-95513a13696b4d10a079976b1e2e4507/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.14.3
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+mlflow_version: 3.11.1
+model_id: m-95513a13696b4d10a079976b1e2e4507
+model_size_bytes: 4076
+model_uuid: m-95513a13696b4d10a079976b1e2e4507
+prompts: null
+run_id: 17943d5cdbf14873b512b2eedceaf11f
+utc_time_created: '2026-05-05 02:06:26.191073'
