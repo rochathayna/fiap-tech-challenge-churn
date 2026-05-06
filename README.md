@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/PyTorch-2.0-orange?logo=pytorch" />
   <img src="https://img.shields.io/badge/FastAPI-0.110-green?logo=fastapi" />
   <img src="https://img.shields.io/badge/MLflow-2.10-blue?logo=mlflow" />
-  <img src="https://img.shields.io/badge/testes-6%20passando-brightgreen?logo=pytest" />
+  <img src="https://img.shields.io/badge/testes-7%20passando-brightgreen?logo=pytest" />
 </p>
 
 <p align="center">
