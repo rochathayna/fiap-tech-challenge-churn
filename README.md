@@ -18,8 +18,8 @@
 ## 📋 Sobre o Projeto
 
 Uma operadora de telecomunicações enfrenta alta taxa de cancelamento de clientes.
-Este projeto constrói um modelo preditivo de churn do zero — desde a exploração dos dados
-até uma API de inferência em produção — aplicando boas práticas de engenharia de ML.
+Este projeto constrói um modelo preditivo de churn do zero, desde a exploração dos dados
+até uma API de inferência em produção, aplicando boas práticas de engenharia de ML.
 
 **Dataset:** [Telco Customer Churn — IBM/Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
 - 7.032 clientes | 18 features | 26.5% de churn
