@@ -116,6 +116,7 @@ fiap-tech-challenge-churn/
 │   └── 02_mlp_pytorch.ipynb
 ├── tests/
 │   ├── test_smoke.py
+│   ├── test_schema.py
 │   └── test_api.py
 ├── docs/
 │   └── model_card.md
