@@ -7,8 +7,10 @@ import torch
 from fastapi import FastAPI, Request
 
 from src.api.schemas import CustomerFeatures, PredictionResponse
-from src.data.preprocessing import FEATURES_CAT, FEATURES_NUM
+from src.data.preprocessing import FEATURES_NUM, FEATURES_CAT
 from src.models.mlp import ChurnMLP
+
+torch.manual_seed(42)
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
